@@ -6,9 +6,9 @@ import java.util.regex.Pattern;
 public class EmailRegex {
                  //main method
      public static void main(String[] args) {
-			String email = "xyz@bridgelabz";
+			String email = "xyz@bridgelabz.co";
 			
-			String regex="^[a-zA-Z0-9]+@[a-zA-Z]+$";
+			String regex="^[a-zA-Z0-9]+@[a-zA-Z]+\\.[a-zA-Z]{2,3}$";
 			Pattern pattern = Pattern.compile(regex);
 			Matcher matcher = pattern.matcher(email);
 			boolean result = matcher.matches();
