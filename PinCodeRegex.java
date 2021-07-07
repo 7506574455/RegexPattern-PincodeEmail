@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 public class PinCodeRegex {
 
 	public static void main(String[] args) {
-		String pinCode = "A400088";
+		String pinCode = "400088B";
 		
 		String regex="^[0-9]{6}$";
 		Pattern pattern = Pattern.compile(regex);
